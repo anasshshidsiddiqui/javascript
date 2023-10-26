@@ -4,7 +4,7 @@ const regularUser = {
         street: "5 street"
     }
 }
-console.log(regularUser.address.state);
+//console.log(regularUser.address.state);
 
 const users = [
     {
@@ -21,7 +21,7 @@ const users = [
     },
 ]
 
-console.log(users[0].email);
+//console.log(users[0].email);
 
 const tinderUser = {}
 
@@ -29,7 +29,18 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+//destructuring objects
+var employee = {    // Object we want to destructure
+    firstname: 'Jon',
+    lastname: 'Snow',
+    dateofbirth: '1990'
+};
+
+// Destructuring the object into our variables
+var { firstname: first, lastname, dateofbirth } = employee;
+console.log( first, lastname, dateofbirth);
